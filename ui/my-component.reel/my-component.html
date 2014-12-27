@@ -9,12 +9,28 @@
             "properties": {
                 "element": {"#": "owner"}
             }
+        },
+        "checkbox": {
+            "prototype": "digit/ui/checkbox.reel",
+            "properties": {
+                "element": {"#": "checkbox"},
+                "checked": true
+            }
+        },
+        "radio": {
+            "prototype": "digit/ui/radio-button.reel",
+            "properties": {
+                "element": {"#": "radio"},
+                "checked": true
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="owner" class="MyComponent">
+        <input type="checkbox" data-montage-id="checkbox">
+        <input type="radio" data-montage-id="radio">
     </div>
 </body>
 </html>
